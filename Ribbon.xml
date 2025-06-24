@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<customUI xmlns="http://schemas.microsoft.com/office/2009/07/customui" onLoad="Ribbon_Load" >
+  
+  <ribbon>
+    <tabs>
+      <tab id="StressUtilityAddIns" label="Stress Utilities">
+        <group id="grpFELoads" label="FE Data Processing">
+          <button id="BtnReadHDF5" imageMso="DatabaseInsert" onAction="RibbonActions" label="Read HDF5 Database" size="large" />
+          <menu id="ImportFEMData" imageMso="ImportTextFile" label="FEM Data from" size="large">
+            <button id="BtnReadPunch" imageMso="ImportTextFile" onAction="RibbonActions" label="Nastran Punch File(s)" />
+            <button id="Btnf06" imageMso="ImportTextFile" onAction="RibbonActions" supertip="Nastran *.f06 files" label="Nastran .f06 Results" />
+            <button id="BtnInsrptFile" imageMso="ImportTextFile" onAction="RibbonActions" supertip="Import Results from Patran *.rpt files" label="Patran .rpt Files" />
+          </menu>
+        </group>
+        <group id="grpLoadProcess" label="Load Processing">
+        <button id="BtnExptLCTbl" imageMso="ExportExcel" onAction="RibbonActions" label="Get Load Case Template" size="large" />
+          <button id="BtnCombLoadCase" imageMso="RecordsTotals" onAction="RibbonActions" label="Combine Load Cases" size="large" />
+        </group>
+        <group id="grpCalculation" label="Calculation Tables">
+          <button id="BtnInsTbl" imageMso="TableInsert" onAction="RibbonActions" screentip="Click this button to inset rowwise calculation table." label="Insert Calc Table (Row)" />
+          <button id="BtnTbleVert" imageMso="TableInsert" onAction="RibbonActions" screentip="Click this button to inset columnwise calculation table." label="Insert Calc Table (Column)" />
+          <button id="BtnInsRef" imageMso="BibliographyGallery" onAction="RibbonActions" screentip="Click to Insert Reference Table" label="Insert Reference Table" size="normal" />
+          <button id="BtnTblRename" imageMso="NameCreateFromSelection" onAction="RibbonActions" label="Renumber Tables" size="large" />
+        </group>
+        <!--group id="grpReport" label="Report">
+                    <button id="BtnReport" imageMso="ExportWord" onAction="BtnReport_Click" label="Write Word Report" size="large" />
+                </group-->
+        <!--group id="grpReference" label="Reference">
+          <button id="BtnInsRef" imageMso="BibliographyGallery" onAction="RibbonActions" screentip="Click to Insert Reference Table" label="Insert Reference Table" size="large" />
+        </group-->
+        <group id="Report" label="Reporting">
+          <button id="BtnPrepareReport" imageMso="GetExternalDataFromText" onAction="RibbonActions" supertip="Prepare the Report Contents" label="Prepare Report Contents" size="large" />
+          <toggleButton id="BtnReport" imageMso="ExportWord" getPressed="BtnReportPressed" onAction="BtnReportToggle" supertip="Write the contents of the Report to workbook" label="Export to Report" size="large" />
+        </group>
+        <group id="NastranCards" label="NASTRAN CARDS">
+          <toggleButton id="BtnNastranCards" imageMso="TableExcelSpreadsheetInsert" getPressed="BtnNastranCardsPressed" onAction="BtnNastranCardsToggle" supertip="Add Nastran Cards to Workbook" label="Add Nastran Cards" size="large" />
+          <toggleButton id="BtnWriteCards" imageMso="ExportTextFile" getPressed="BtnWriteCardsPressed" onAction="BtnWriteCardsToggle" supertip="Write Nastran Cards to File" label="Write Nastran Cards" size="large" />
+        </group>
+        <group id="About" label="About">
+          <button id="BtnAbout" onAction="RibbonActions" label="About" size="normal"/>
+          <button id="BtnHelp" onAction="RibbonActions" label="Help" size="normal" />
+          <!--button id="BtnLicense" onAction="RibbonActions" label="Validate License" size="normal" /-->
+          <button id="BtnRefresh" onAction="RibbonActions" label="Refresh" size="normal" />
+          <toggleButton id="BtnSettings" imageMso="AddInManager" getPressed="BtnSettingsPressed" onAction="BtnSettingsToggle" supertip="Addin Settings" label="Addin Settings" size="large" />
+        </group>
+      </tab>
+    </tabs>
+  </ribbon>
+
+</customUI>
+

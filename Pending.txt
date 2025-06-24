@@ -1,0 +1,23 @@
+﻿RESOLUTION
+
+Resolved Issues
+===============================================================================
+HDF5 Reading: Resolve the issue with the reading the gauss points. - resolved.
+Report - Improve cross reference algorithm. - Resolved.
+Speeding up the table writing - Resolved.
+HDF5 Reading - Issue reading the data into 32bit Excel files. -->Resolved. Runs only on 64bit Excel.
+================================================================================
+
+Pending Issues
+======================================================================================================
+Table Cross reference with the split table adds different captions instead of referencing to the same.
+Table of contents need to be included at the right position.
+
+=======================================================================================================
+
+Future Development
+===================================================================================================================
+F06, Punch File Readings - Improve the speed by writing the array to the Excel range instead of writing each cell. 
+Inclusion of NLG.
+Include Nastran Load Cards. - Ongoing
+===================================================================================================================

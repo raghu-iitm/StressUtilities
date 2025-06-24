@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Help xmlns="http://addin-help">
+  <!-- Repeat this for each ribbon in your add-in -->
+  <AddInHelp key="StressUtilityAddIns">
+    <!-- An entry for each control you want to provide custon help for -->
+    <HelpItem key="StressUtilityAddIns:grpFELoads:BtnReadHDF5" helpId="1001" />
+    <HelpItem key="StressUtilityAddIns:grpFELoads:ImportFEMData" helpId="1002" />
+
+    <HelpItem key="StressUtilityAddIns:grpLoadProcess:BtnExptLCTbl" helpId="1003" />
+    <HelpItem key="StressUtilityAddIns:grpLoadProcess:BtnCombLoadCase" helpId="1004" />
+
+
+    <HelpItem key="StressUtilityAddIns:grpCalculation:BtnInsTbl" helpId="1005" />
+    <HelpItem key="StressUtilityAddIns:grpCalculation:BtnTbleVert" helpId="1006" />
+    <HelpItem key="StressUtilityAddIns:grpCalculation:BtnTblRename" helpId="1007" />
+
+    <HelpItem key="StressUtilityAddIns:grpReference:BtnInsRef" helpId="1008" />
+
+    <HelpItem key="StressUtilityAddIns:Report:BtnPrepareReport" helpId="1009" />
+    <HelpItem key="StressUtilityAddIns:Report:BtnReport" helpId="1010" />
+
+
+  </AddInHelp>
+
+</Help>
+
+
