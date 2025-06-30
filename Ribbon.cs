@@ -271,41 +271,6 @@ namespace StressUtilities
             ribbon.InvalidateControl("BtnWriteCards");
         }
 
-       /* private bool CheckLicenseFile()
-        {
-            LicenseValidation LicenseValidity = new LicenseValidation();
-            string LicenseReport = LicenseValidity.LicenseValidityCheck();
-            bool Status = false;
-
-            if (LicenseReport == "License is Valid")
-            {
-                Status = true;
-            }
-
-            return Status;
-
-        }*/
-
-        //Add getEnabled="CheckLicense" to xml file
-       /* public bool CheckLicense(ref Office.IRibbonControl control)
-        {
-            //The idea is to validate only the first button. The rest are validated by virtue of the first button.
-            if (control.Id == "BtnReadHDF5")
-            {
-                LicenseValidation LicenseValidity = new LicenseValidation();
-                string LicenseReport = LicenseValidity.LicenseValidityCheck();
-
-                if (LicenseReport == "License is Valid")
-                {
-                    LicenseStatus = true;
-                }
-                else
-                {
-                    LicenseStatus = true; //to be changed to false when the issue with Initialisation of the control is resolved.
-                }
-            }
-            return LicenseStatus;
-        }*/
         #endregion
 
         #region Helpers
