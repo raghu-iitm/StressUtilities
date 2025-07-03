@@ -32,10 +32,10 @@
     </NuGetPackageImportStamp>
     <IsWebBootstrapper>False</IsWebBootstrapper>
     <BootstrapperEnabled>true</BootstrapperEnabled>
-    <PublishUrl>D:\02_Projects\01_Published_Software\StressUtilities\R2\</PublishUrl>
+    <PublishUrl>D:\02_Projects\01_Published_Software\StressUtilities\github\</PublishUrl>
     <InstallUrl />
     <TargetCulture>en</TargetCulture>
-    <ApplicationVersion>2.0.0.9</ApplicationVersion>
+    <ApplicationVersion>2.0.0.12</ApplicationVersion>
     <AutoIncrementApplicationRevision>true</AutoIncrementApplicationRevision>
     <UpdateEnabled>true</UpdateEnabled>
     <UpdateInterval>7</UpdateInterval>
@@ -98,6 +98,8 @@
     <DocumentationFile>
     </DocumentationFile>
     <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
   </PropertyGroup>
   <!--
     This section defines properties that are set when the "Release" configuration is selected.
@@ -322,8 +324,6 @@
       <DesignTime>True</DesignTime>
     </Compile>
     <None Include="app.config" />
-    <None Include="CSCertificate2022.pfx" />
-    <None Include="CSCertificate2023.pfx" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -352,9 +352,6 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Ribbon.xml" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\DataType.xml" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\IconSU.ico" />
@@ -398,9 +395,7 @@
     <None Include="Resources\FolderBottomPanel_16x.png" />
     <None Include="Resources\SelectCell_16x.png" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="License\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
@@ -409,10 +404,11 @@
     <SignManifests>true</SignManifests>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestKeyFile>CSCertificate2023.pfx</ManifestKeyFile>
+    <ManifestKeyFile>
+    </ManifestKeyFile>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestCertificateThumbprint>1056FBB16BB54940D93C7FB85F4D04A4238FC278</ManifestCertificateThumbprint>
+    <ManifestCertificateThumbprint>7E1946CC48BD77CE83E5A34F5860C370719DE5D2</ManifestCertificateThumbprint>
   </PropertyGroup>
   <PropertyGroup>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -424,10 +420,13 @@
     <SignAssembly>false</SignAssembly>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestTimestampUrl>http://timestamp.comodoca.com</ManifestTimestampUrl>
+    <ManifestTimestampUrl>http://time.certum.pl</ManifestTimestampUrl>
   </PropertyGroup>
   <PropertyGroup>
     <StartupObject />
+  </PropertyGroup>
+  <PropertyGroup>
+    <DelaySign>false</DelaySign>
   </PropertyGroup>
   <!-- Include the build rules for a C# project. -->
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

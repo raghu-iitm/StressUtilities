@@ -5,6 +5,11 @@ using System.Text;
 using System.Windows.Forms;
 using HDF.PInvoke;
 
+/** 
+Copyright (c) 2020-2030 Raghavendra Prasad Laxman
+Licensed under the GPL-3.0 license. See LICENSE file for details.
+*/
+
 #if HDF5_VER1_10
 using hid_t = System.Int64;
 #else

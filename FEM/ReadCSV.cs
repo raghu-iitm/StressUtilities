@@ -3,6 +3,11 @@ using System.Collections.Generic;
 using System.IO;
 using Excel = Microsoft.Office.Interop.Excel;
 
+/** 
+Copyright (c) 2020-2030 Raghavendra Prasad Laxman
+Licensed under the GPL-3.0 license. See LICENSE file for details.
+*/
+
 namespace FEM
 {
     class ReadCSV

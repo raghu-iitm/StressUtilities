@@ -12,23 +12,10 @@ using System.Windows.Forms;
 using Office = Microsoft.Office.Core;
 using Word = Microsoft.Office.Interop.Word;
 
-// TODO:  Follow these steps to enable the Ribbon (XML) item:
-
-// 1: Copy the following code block into the ThisAddin, ThisWorkbook, or ThisDocument class.
-
-//  protected override Microsoft.Office.Core.IRibbonExtensibility CreateRibbonExtensibilityObject()
-//  {
-//      return new Ribbon();
-//  }
-
-// 2. Create callback methods in the "Ribbon Callbacks" region of this class to handle user
-//    actions, such as clicking a button. Note: if you have exported this Ribbon from the Ribbon designer,
-//    move your code from the event handlers to the callback methods and modify the code to work with the
-//    Ribbon extensibility (RibbonX) programming model.
-
-// 3. Assign attributes to the control tags in the Ribbon XML file to identify the appropriate callback methods in your code.  
-
-// For more information, see the Ribbon XML documentation in the Visual Studio Tools for Office Help.
+/*
+Copyright (c) 2020-2030 Raghavendra Prasad Laxman
+Licensed under the GPL-3.0 license. See LICENSE file for details.
+*/
 
 
 namespace StressUtilities
@@ -72,54 +59,18 @@ namespace StressUtilities
                 case "BtnInsrptFile":
                     Readrpt ReadFile = new Readrpt();
                     ReadFile.ImportPatranRPTfile();
-                    /*if (CheckLicenseFile())
-                    {
-                        Readrpt ReadFile = new Readrpt();
-                        ReadFile.ImportPatranRPTfile();
-                    }
-                    else
-                    {
-                        MessageBox.Show("The License is Invalid or Expired. Please contact your system admin.");
-                    }*/
                     break;
                 case "Btnf06":
                     Readf06 fo6frm = new Readf06();
                     fo6frm.LaunchF06Form();
-                    /*if (CheckLicenseFile())
-                    {
-                        Readf06 fo6frm = new Readf06();
-                        fo6frm.LaunchF06Form();
-                    }
-                    else
-                    {
-                        MessageBox.Show("The License is Invalid or Expired. Please contact your system admin.");
-                    }*/
                     break;
                 case "BtnReadPunch":
                     ReadPunch PunchRead = new ReadPunch();
                     PunchRead.LaunchPunchForm();
-                    /*if (CheckLicenseFile())
-                    {
-                        ReadPunch PunchRead = new ReadPunch();
-                        PunchRead.LaunchPunchForm();
-                    }
-                    else
-                    {
-                        MessageBox.Show("The License is Invalid or Expired. Please contact your system admin.");
-                    }*/
                     break;
                 case "BtnReadHDF5":
                     H5DBread HDF5Form = new H5DBread();
                     HDF5Form.LaunchHDF5Form();
-                    /*if (CheckLicenseFile())
-                    {
-                        H5DBread HDF5Form = new H5DBread();
-                        HDF5Form.LaunchHDF5Form();
-                    }
-                    else
-                    {
-                        MessageBox.Show("The License is Invalid or Expired. Please contact your system admin.");
-                    }*/
                     break;
                 case "BtnExptLCTbl":
                     LCTable LCCombination = new LCTable();
@@ -148,16 +99,6 @@ namespace StressUtilities
                 case "BtnPrepareReport":
                     WriteReport ReportForm = new WriteReport();
                     ReportForm.LaunchReportContentsForm();
-                    /*if (CheckLicenseFile())
-                    {
-                        WriteReport ReportForm = new WriteReport();
-                        ReportForm.LaunchReportContentsForm();
-
-                    }
-                    else
-                    {
-                        MessageBox.Show("The License is Invalid or Expired. Please contact your system admin.");
-                    }*/
                     break;
                 case "BtnRefresh":
                     {
@@ -167,16 +108,8 @@ namespace StressUtilities
                     }
                     break;
                 //case "BtnReport":
-
-                //if (CheckLicenseFile())
-                //{
                 //    WriteReport LaunchReportForm = new WriteReport();
                 //    LaunchReportForm.LaunchReportForm();
-                //}
-                //else
-                //{
-                //    MessageBox.Show("The License is Invalid or Expired. Please contact your system admin.");
-                //}
                 //break;
                 //case "BtnNastranCards":
                 //    NastranCards NCards = new NastranCards();
@@ -289,41 +222,6 @@ namespace StressUtilities
             ribbon.InvalidateControl("BtnWriteCards");
         }
 
-       /* private bool CheckLicenseFile()
-        {
-            LicenseValidation LicenseValidity = new LicenseValidation();
-            string LicenseReport = LicenseValidity.LicenseValidityCheck();
-            bool Status = false;
-
-            if (LicenseReport == "License is Valid")
-            {
-                Status = true;
-            }
-
-            return Status;
-
-        }*/
-
-        //Add getEnabled="CheckLicense" to xml file
-       /* public bool CheckLicense(ref Office.IRibbonControl control)
-        {
-            //The idea is to validate only the first button. The rest are validated by virtue of the first button.
-            if (control.Id == "BtnReadHDF5")
-            {
-                LicenseValidation LicenseValidity = new LicenseValidation();
-                string LicenseReport = LicenseValidity.LicenseValidityCheck();
-
-                if (LicenseReport == "License is Valid")
-                {
-                    LicenseStatus = true;
-                }
-                else
-                {
-                    LicenseStatus = true; //to be changed to false when the issue with Initialisation of the control is resolved.
-                }
-            }
-            return LicenseStatus;
-        }*/
         #endregion
 
         #region Helpers

@@ -23,12 +23,6 @@
           <button id="BtnInsRef" imageMso="BibliographyGallery" onAction="RibbonActions" screentip="Click to Insert Reference Table" label="Insert Reference Table" size="normal" />
           <button id="BtnTblRename" imageMso="NameCreateFromSelection" onAction="RibbonActions" label="Renumber Tables" size="large" />
         </group>
-        <!--group id="grpReport" label="Report">
-                    <button id="BtnReport" imageMso="ExportWord" onAction="BtnReport_Click" label="Write Word Report" size="large" />
-                </group-->
-        <!--group id="grpReference" label="Reference">
-          <button id="BtnInsRef" imageMso="BibliographyGallery" onAction="RibbonActions" screentip="Click to Insert Reference Table" label="Insert Reference Table" size="large" />
-        </group-->
         <group id="Report" label="Reporting">
           <button id="BtnPrepareReport" imageMso="GetExternalDataFromText" onAction="RibbonActions" supertip="Prepare the Report Contents" label="Prepare Report Contents" size="large" />
           <toggleButton id="BtnReport" imageMso="ExportWord" getPressed="BtnReportPressed" onAction="BtnReportToggle" supertip="Write the contents of the Report to workbook" label="Export to Report" size="large" />

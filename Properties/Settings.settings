@@ -3,7 +3,7 @@
   <Profiles />
   <Settings>
     <Setting Name="WorkingDirectory" Type="System.String" Scope="User">
-      <Value Profile="(Default)">C:\</Value>
+      <Value Profile="(Default)">C:\Temp</Value>
     </Setting>
     <Setting Name="DBpath" Type="System.String" Scope="User">
       <Value Profile="(Default)">C:\</Value>

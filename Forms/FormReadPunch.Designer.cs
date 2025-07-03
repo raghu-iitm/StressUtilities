@@ -1,5 +1,11 @@
 ﻿namespace StressUtilities.Forms
 {
+
+ /*
+Copyright (c) 2020-2030 Raghavendra Prasad Laxman
+Licensed under the GPL-3.0 license. See LICENSE file for details.
+*/
+
     partial class FormReadPunch
     {
         /// <summary>

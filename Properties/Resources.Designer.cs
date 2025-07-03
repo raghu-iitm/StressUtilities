@@ -19,7 +19,7 @@ namespace StressUtilities.Properties {
     // class via a tool like ResGen or Visual Studio.
     // To add or remove a member, edit your .ResX file then rerun ResGen
     // with the /str option, or rebuild your VS project.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "17.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     internal class Resources {
@@ -107,23 +107,6 @@ namespace StressUtilities.Properties {
             get {
                 object obj = ResourceManager.GetObject("Dataset", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
-        ///&lt;crdb schema=&quot;20180&quot;&gt;
-        ///    &lt;typedefs&gt;
-        ///        &lt;typedef name=&quot;BEAM3_FORCE&quot;&gt;
-        ///            &lt;field name=&quot;GRID&quot; type=&quot;integer&quot; description=&quot;Number of active grids or corner grid ID&quot;/&gt;
-        ///            &lt;field name=&quot;MY&quot; type=&quot;double&quot; description=&quot;Membrane force  in y&quot;/&gt;
-        ///            &lt;field name=&quot;MZ&quot; type=&quot;double&quot; description=&quot;Bending moment in z-direction&quot;/&gt;
-        ///            &lt;field name=&quot;QY&quot; type=&quot;double&quot; description=&quot;Shear force in y-direction&quot;/&gt;
-        ///            &lt;field name=&quot;QZ&quot; type [rest of string was truncated]&quot;;.
-        /// </summary>
-        internal static string DataType {
-            get {
-                return ResourceManager.GetString("DataType", resourceCulture);
             }
         }
         

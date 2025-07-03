@@ -1,14 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.30114.105
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34902.65
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StressUtilities", "StressUtilities.csproj", "{79704D0E-FA13-4B3D-B918-A3D5C49FC19F}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestStressUtilities", "..\UnitTestStressUtilities\UnitTestStressUtilities.csproj", "{4AC94D33-BD2C-4C04-B152-D961C42B6236}"
-	ProjectSection(ProjectDependencies) = postProject
-		{79704D0E-FA13-4B3D-B918-A3D5C49FC19F} = {79704D0E-FA13-4B3D-B918-A3D5C49FC19F}
-	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -26,14 +21,6 @@ Global
 		{79704D0E-FA13-4B3D-B918-A3D5C49FC19F}.Release|Any CPU.Build.0 = Release|Any CPU
 		{79704D0E-FA13-4B3D-B918-A3D5C49FC19F}.Release|x64.ActiveCfg = Release|Any CPU
 		{79704D0E-FA13-4B3D-B918-A3D5C49FC19F}.Release|x64.Build.0 = Release|Any CPU
-		{4AC94D33-BD2C-4C04-B152-D961C42B6236}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4AC94D33-BD2C-4C04-B152-D961C42B6236}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4AC94D33-BD2C-4C04-B152-D961C42B6236}.Debug|x64.ActiveCfg = Debug|Any CPU
-		{4AC94D33-BD2C-4C04-B152-D961C42B6236}.Debug|x64.Build.0 = Debug|Any CPU
-		{4AC94D33-BD2C-4C04-B152-D961C42B6236}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4AC94D33-BD2C-4C04-B152-D961C42B6236}.Release|Any CPU.Build.0 = Release|Any CPU
-		{4AC94D33-BD2C-4C04-B152-D961C42B6236}.Release|x64.ActiveCfg = Release|Any CPU
-		{4AC94D33-BD2C-4C04-B152-D961C42B6236}.Release|x64.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

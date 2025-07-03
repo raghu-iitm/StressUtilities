@@ -1,9 +1,16 @@
-﻿using StressUtilities;
+﻿using Microsoft.Office.Interop.Excel;
+using StressUtilities;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
 using Excel = Microsoft.Office.Interop.Excel;
+
+/** 
+Copyright (c) 2020-2030 Raghavendra Prasad Laxman
+Licensed under the GPL-3.0 license. See LICENSE file for details.
+*/
 
 namespace FEM
 {
@@ -20,7 +27,7 @@ namespace FEM
             }
             set
             {
-                _TemplateName = "LC_Table.xlsx";
+                _TemplateName = value;
             }
         }
         private string LCSheetName
@@ -31,21 +38,34 @@ namespace FEM
             }
             set
             {
-                _SheetName = "LoadCases";
+                _SheetName = value;
             }
         }
 
         public LCTable()
         {
-
+            TemplateName = "LC_Table.xlsx";
+             LCSheetName = "LoadCases";
         }
         public void LCTableTemplate()
         {
-            //string LCTable_Path;
-            //string Template_Path;
+            Workbook workbook = Globals.ThisAddIn.Application.ActiveWorkbook;
+            string LcTablePath;
+            if (workbook != null && !string.IsNullOrEmpty(workbook.FullName))
+            {
+                LcTablePath = Path.GetDirectoryName(workbook.FullName);
+            }
+            else
+            {
+                MessageBox.Show($"Working Directory cannot be identified  \nPlease save the excel file and try again");
+                return;
+            }
 
-            string LcTablePath = StressUtilities.Properties.Settings.Default.WorkingDirectory; // @"C:\Temp";
-
+            if(string.IsNullOrEmpty(LcTablePath) )
+            {
+                MessageBox.Show($"Working Directory cannot be identified  \nPlease save the excel file and try again");
+                return;
+            }
 
             string TemplatePath = Path.Combine(LcTablePath, TemplateName);
             if (File.Exists(TemplatePath))

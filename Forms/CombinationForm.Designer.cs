@@ -1,5 +1,10 @@
 ﻿namespace StressUtilities.Forms
 {
+/*
+Copyright (c) 2020-2030 Raghavendra Prasad Laxman
+Licensed under the GPL-3.0 license. See LICENSE file for details.
+*/
+
     partial class CombinationForm
     {
         /// <summary>
@@ -300,9 +305,9 @@
             this.Label10.Location = new System.Drawing.Point(121, 542);
             this.Label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Label10.Name = "Label10";
-            this.Label10.Size = new System.Drawing.Size(363, 13);
+            this.Label10.Size = new System.Drawing.Size(284, 13);
             this.Label10.TabIndex = 19;
-            this.Label10.Text = "Copyright © 2020-2023 Raghavendra Prasad Laxman. All Rights Reserved.";
+            this.Label10.Text = "Copyright © 2020-2028 Stress Utilities. All Rights Reserved";
             // 
             // GroupBox4
             // 

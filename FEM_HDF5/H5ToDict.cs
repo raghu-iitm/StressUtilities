@@ -14,6 +14,11 @@ using System.Threading;
 using System.Linq;
 //using Application = System.Windows.Forms.Application;
 
+/** 
+Copyright (c) 2020-2030 Raghavendra Prasad Laxman
+Licensed under the GPL-3.0 license. See LICENSE file for details.
+*/
+
 #if HDF5_VER1_10
 using hid_t = System.Int64;
 #else

@@ -9,6 +9,11 @@ using System.Windows.Forms;
 using System.Xml;
 using Excel = Microsoft.Office.Interop.Excel;
 
+/** 
+Copyright (c) 2020-2030 Raghavendra Prasad Laxman
+Licensed under the GPL-3.0 license. See LICENSE file for details.
+*/
+
 namespace FEM
 {
     class ReadPunch
@@ -226,25 +231,23 @@ namespace FEM
             }
         }
 
-        private List<string> DataTypes(string SearchSting)
+        //TODO - update this code to include the json instead of xml
+       /* private List<string> DataTypes(string SearchSting)
         {
             string xmlFile = StressUtilities.Properties.Resources.DataType;
             XmlDocument xmldoc = new XmlDocument();
-            //XmlNode entitynode;
-            //XmlNodeList nodeList;
 
 
             xmldoc.LoadXml(xmlFile);
             XmlNode root = xmldoc.DocumentElement;
-            //XmlNode node;
+
             List<string> Headings = new List<string>();
-            //int count = 0;
             int AttrCount;
 
             XmlNodeList nodeList = xmldoc.SelectNodes(SearchSting);
             XmlNode entitynode = xmldoc.SelectSingleNode(SearchSting);
             int count = entitynode.ChildNodes.Count;
-            //ReDim Headings(count -1)
+
 
             count = 0;
             foreach (XmlNode node in entitynode.ChildNodes)
@@ -258,7 +261,7 @@ namespace FEM
             }
 
             return Headings;
-        }
+        }*/
 
 
 
