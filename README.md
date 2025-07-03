@@ -19,4 +19,7 @@ Wriing Nastran Cards
 
 
 # Dependencies
-The utilities require HDF5 libraries for reading the HDF5 results.
+The utilities require HDF5 libraries for reading the HDF5 results. Download the HDF5 libraries from HDF5 group at
+https://www.hdfgroup.org/solutions/hdf5/
+
+Setup the environment variables as needed

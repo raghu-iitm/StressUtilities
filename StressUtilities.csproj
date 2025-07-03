@@ -135,10 +135,8 @@
   -->
   <ItemGroup>
     <Reference Include="Accessibility" />
-    <Reference Include="HDF.PInvoke, Version=1.10.6.1, Culture=neutral, PublicKeyToken=18793c1fcffe58a3, processorArchitecture=MSIL">
-      <HintPath>packages\HDF.PInvoke.1.10.6.1\lib\HDF.PInvoke.dll</HintPath>
-      <EmbedInteropTypes>False</EmbedInteropTypes>
-      <Private>True</Private>
+    <Reference Include="HDF.PInvoke, Version=1.10.11.0, Culture=neutral, PublicKeyToken=18793c1fcffe58a3, processorArchitecture=MSIL">
+      <HintPath>packages\HDF.PInvoke.1.10.11\lib\HDF.PInvoke.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Office.Interop.Excel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
       <EmbedInteropTypes>True</EmbedInteropTypes>
@@ -443,11 +441,11 @@
       </FlavorProperties>
     </VisualStudio>
   </ProjectExtensions>
-  <Import Project="packages\HDF.PInvoke.1.10.6.1\build\HDF.PInvoke.targets" Condition="Exists('packages\HDF.PInvoke.1.10.6.1\build\HDF.PInvoke.targets')" />
+  <Import Project="packages\HDF.PInvoke.1.10.11\build\HDF.PInvoke.targets" Condition="Exists('packages\HDF.PInvoke.1.10.11\build\HDF.PInvoke.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
       <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
     </PropertyGroup>
-    <Error Condition="!Exists('packages\HDF.PInvoke.1.10.6.1\build\HDF.PInvoke.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\HDF.PInvoke.1.10.6.1\build\HDF.PInvoke.targets'))" />
+    <Error Condition="!Exists('packages\HDF.PInvoke.1.10.11\build\HDF.PInvoke.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\HDF.PInvoke.1.10.11\build\HDF.PInvoke.targets'))" />
   </Target>
 </Project>
