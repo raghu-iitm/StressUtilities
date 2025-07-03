@@ -147,7 +147,7 @@ namespace StressUtilities
 
         private void BtnSettings_Click(object sender, Microsoft.Office.Tools.Ribbon.RibbonControlEventArgs e)
         {
-            Globals.ThisAddIn.TaskPane.Visible = ((Microsoft.Office.Tools.Ribbon.RibbonToggleButton)sender).Checked;
+            Globals.ThisAddIn.SettingsPane.Visible = ((Microsoft.Office.Tools.Ribbon.RibbonToggleButton)sender).Checked;
         }
 
         private void View_Help(string asmLocation)

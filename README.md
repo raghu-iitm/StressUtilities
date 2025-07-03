@@ -10,7 +10,7 @@ Reading Punch Files
 
 Reading f06 data
 
-Comverting MS Excel Formulae into MS Word Equations
+Converting MS Excel Formulae into MS Word Equations
 
 Report Generation
 
