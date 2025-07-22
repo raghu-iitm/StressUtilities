@@ -19,7 +19,12 @@ Wriing Nastran Cards
 
 
 # Dependencies
-The utilities require HDF5 libraries for reading the HDF5 results. Download the HDF5 libraries from HDF5 group at
+MS Office (Preferably 64 bit version), Excel and Word
+
+Windows 10 and above
+
+HDF5 Libraries for reading Nastran H5 results. Download the HDF5 libraries from HDF5 group at
 https://www.hdfgroup.org/solutions/hdf5/
 
-Setup the environment variables as needed
+Setup the environment variables as needed for HDF5
+
